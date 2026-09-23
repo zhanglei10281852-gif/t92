@@ -1,6 +1,6 @@
 # 社区老年人助餐服务 API
 
-一个用于评测题、接口练习和业务规则演示的纯后端基础项目。项目保留了原助餐平台的核心业务，但已经移除前端和 MongoDB，改为单服务 Express API + SQLite，支持在本地或 Docker 中一键运行。
+一个用于接口练习和业务规则演示的纯后端服务。项目保留了原助餐平台的核心业务，但已经移除前端和 MongoDB，改为单服务 Express API + SQLite，支持在本地或 Docker 中一键运行。
 
 ## 功能范围
 
@@ -61,7 +61,7 @@ SQLite 文件默认位于 `backend/data/elderly-meal.sqlite3`。`npm run seed` �
 | 助餐点管理员 | `canteen1` | `cc123` |
 | 助餐点管理员 | `canteen2` | `cc123` |
 
-演示密码仅用于本地题目环境。部署前应修改密码、`JWT_SECRET` 和数据库路径。
+演示密码仅用于本地演示环境。部署前应修改密码、`JWT_SECRET` 和数据库路径。
 
 ## API 概览
 
