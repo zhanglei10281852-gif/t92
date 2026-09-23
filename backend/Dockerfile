@@ -1,13 +1,13 @@
-FROM node:18-alpine
+FROM node:20-bookworm-slim
 
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm install
+RUN npm ci --omit=dev
 
-COPY . .
-RUN npm run build
+COPY src ./src
 
+ENV NODE_ENV=production
 EXPOSE 6847
 
-CMD ["node", "dist/index.js"]
+CMD ["node", "src/server.js"]
